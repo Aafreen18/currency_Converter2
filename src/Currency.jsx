@@ -5,6 +5,7 @@ import GetApi from './api/GetApi';
 import { Container, Row, Col, Form, Button, Card, Alert } from 'react-bootstrap';
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-select/dist/react-select.css'
 
 const { CurrencyOptions, ExchangeAmount } = GetApi;
 
@@ -49,21 +50,27 @@ const Currency = () => {
 
  
   const customStyles = {
-    control: (provided, state) => ({
-      ...provided,
-      backgroundColor: 'transparent',
-      border: '1px solid #ced4da',
-      borderRadius: '0.375rem',
-      color: 'white',
-      minHeight: '38px',
-      boxShadow: state.isFocused ? '0 0 0 1px white' : provided.boxShadow,
-    }),
-    menu: (provided) => ({
-      ...provided,
-      maxHeight: '200px',
-      overflowY: 'auto',
-    }),
-    option: (provided, state) => ({
+  control: (provided, state) => ({
+    ...provided,
+    backgroundColor: 'transparent',
+    border: '1px solid #ced4da',
+    borderRadius: '0.375rem',
+    color: 'white',
+    minHeight: '38px',
+    boxShadow: state.isFocused ? '0 0 0 1px white' : provided.boxShadow,
+  }),
+  menu: (provided) => ({
+    ...provided,
+    zIndex: 9999,
+    maxHeight: '200px',
+    overflowY: 'auto',
+    backgroundColor: 'black',
+  }),
+  menuList: (provided) => ({
+    ...provided,
+    padding: 0,
+  }),
+  option: (provided, state) => ({
     ...provided,
     backgroundColor: state.isSelected 
       ? 'white' 
@@ -71,19 +78,30 @@ const Currency = () => {
       ? 'rgba(128, 128, 128, 0.6)' 
       : 'black',
     color: state.isSelected 
-      ? 'black':'white' ,
+      ? 'black':'white',
     ':active': {
       backgroundColor: 'rgba(128, 128, 128, 0.7)',
     },
-    }),
-    singleValue: (provided) => ({
-      ...provided,
+  }),
+  singleValue: (provided) => ({
+    ...provided,
+    color: 'white',
+  }),
+  input: (provided) => ({
+    ...provided,
+    color: 'white',
+  }),
+  dropdownIndicator: (provided) => ({
+    ...provided,
+    color: 'white',
+    ':hover': {
       color: 'white',
-    }),
-    input: (provided) => ({
-      ...provided,
-      color: 'white',
-    }),
+    },
+  }),
+  indicatorSeparator: (provided) => ({
+    ...provided,
+    backgroundColor: 'white',
+  }),
   };
 
   return (
