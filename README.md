@@ -1,12 +1,54 @@
-# React + Vite
+# 💱 Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive **Currency Converter Web App** built with **React**, powered by **React Bootstrap** for UI, **Axios Instance** for API calls, **React Query** for data fetching, and **React Icons** for a modern touch.
 
-Currently, two official plugins are available:
+Convert any currency to another in real-time and get the exchanged amount instantly!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔄 Convert currency from one type to another
+- 🌐 Real-time exchange rate fetching using an API
+- ⚛️ Built with modern React (Hooks-based)
+- 💅 Styled using React Bootstrap for responsiveness
+- 🚀 Data fetching handled via React Query for caching & performance
+- 🔐 API calls managed through Axios Instance for clean & reusable HTTP logic
+- 🎨 Beautiful UI with React Icons for visual appeal
+
+---
+
+## 🖥️ Tech Stack
+
+| Technology       | Description                                |
+|------------------|--------------------------------------------|
+| **React 19**     | JavaScript library for building UIs        |
+| **React Bootstrap** | Styling and layout system based on Bootstrap |
+| **Axios Instance**  | Configured HTTP client for API requests  |
+| **React Query**     | Powerful data-fetching and caching tool  |
+| **React Icons**     | Icon library for React                   |
+
+---
+
+## 🚀 Live Demo
+
+[🔗 Click here to view the live app](#) *(Add your deployed URL here)*
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/currency-converter.git
+
+# Navigate into the project folder
+cd currency-converter
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
