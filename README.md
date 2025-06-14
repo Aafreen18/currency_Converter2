@@ -30,11 +30,9 @@ Convert any currency to another in real-time and get the exchanged amount instan
 
 ---
 
-## 📸 Demo
+## 🚀 Live Demo
 
-![Currency Converter Screenshot](https://via.placeholder.com/800x400?text=Currency+Converter+App+Demo)
-
-> _Easily switch between currencies and get instant conversions!_
+[🔗 Click here to view the live app](#) *(Add your deployed URL here)*
 
 ---
 
