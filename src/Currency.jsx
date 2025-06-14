@@ -37,6 +37,7 @@ const Currency = () => {
 
   const handleCurrencyConverter = () => {
     if (amount > 0) {
+      console.log("Converting...");
       refetch();
     }
   };
@@ -173,15 +174,20 @@ const Currency = () => {
                 <Form.Label column sm="3" className="fw-bold text-white">From :</Form.Label>
                 <Col sm="9">
                   <Select
-                    options={currencyOptions}
-                    value={{ value: fromCurrency, label: fromCurrency }}
-                    onChange={(selectedOption) => setFromCurrency(selectedOption.value)}
-                    isLoading={isCurrencyLoading}
-                    isDisabled={isCurrencyError}
-                    placeholder="Select currency"
-                    styles={customStyles}
-                    menuPlacement="bottom"
-                  />
+  options={currencyOptions}
+  value={{ value: fromCurrency, label: fromCurrency }}
+  onChange={(selectedOption) => setFromCurrency(selectedOption.value)}
+  isLoading={isCurrencyLoading}
+  isDisabled={isCurrencyError}
+  placeholder="Select currency"
+  styles={{
+    ...customStyles,
+    menuPortal: base => ({ ...base, zIndex: 9999 }),
+  }}
+  menuPortalTarget={typeof window !== "undefined" ? document.body : null}
+  menuPlacement="auto"
+/>
+
                 </Col>
               </Form.Group>
             </div>
