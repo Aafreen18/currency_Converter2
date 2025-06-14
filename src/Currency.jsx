@@ -90,7 +90,7 @@ const Currency = () => {
     <div
       style={{
         minHeight: "100vh",
-        backgroundImage: "url('src/assets/hbg.svg')",
+        backgroundImage: "url('/hbg.svg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         display: "flex",
@@ -98,24 +98,25 @@ const Currency = () => {
       }}
     >
       <h1
-        className="text-center fw-bold"
-        style={{
-          paddingTop: "2rem",
-          fontSize: "3rem",
-          background: "linear-gradient(to right, #8b5cf6, #ec4899, #ef4444)",
-          WebkitBackgroundClip: "text",
-          color: "transparent",
-        }}
-      >
-        Currency Converter
-      </h1>
+          className="text-center fw-bold text-[3rem] pt-8"
+          style={{
+            background: "linear-gradient(to right, #8b5cf6, #ec4899, #ef4444)",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            marginTop:"50px"
+          }}
+        >
+          Currency
+          <span className="block sm:inline"> Converter</span>
+        </h1>
+
 
       <Container className="flex-grow-1 d-flex align-items-center justify-content-center">
         <Card
           style={{
             width: "500px",
             height: "600px",
-            backgroundImage: "url('src/assets/dbg2.svg')",
+            backgroundImage: "url('/dbg2.svg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
