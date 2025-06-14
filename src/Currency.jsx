@@ -5,7 +5,7 @@ import GetApi from './api/GetApi';
 import { Container, Row, Col, Form, Button, Card, Alert } from 'react-bootstrap';
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-select/dist/react-select.css'
+import '!style-loader!css-loader!react-select/dist/react-select.min.css';
 
 const { CurrencyOptions, ExchangeAmount } = GetApi;
 
