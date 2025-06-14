@@ -98,17 +98,19 @@ const Currency = () => {
       }}
     >
       <h1
-          className="text-center fw-bold text-[3rem] pt-8"
+          className="text-center fw-bold"
           style={{
+            paddingTop: "2rem",
+            fontSize: "3rem",
             background: "linear-gradient(to right, #8b5cf6, #ec4899, #ef4444)",
             WebkitBackgroundClip: "text",
             color: "transparent",
-            marginTop:"50px"
           }}
         >
-          Currency
-          <span className="block sm:inline"> Converter</span>
+          <span className="d-block d-sm-inline">Currency</span>{" "}
+          <span className="d-block d-sm-inline">Converter</span>
         </h1>
+
 
 
       <Container className="flex-grow-1 d-flex align-items-center justify-content-center">
@@ -126,7 +128,9 @@ const Currency = () => {
             boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
             backdropFilter: "blur(8px)",
             display: "flex",
-            justifyContent: "center"
+            justifyContent: "center",
+            marginLeft:"10px",
+            marginRight:"10px"
           }}
         >
           <Card.Body className="d-flex flex-column justify-content-center gap-4">
