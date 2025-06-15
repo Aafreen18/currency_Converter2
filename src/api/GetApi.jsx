@@ -1,10 +1,7 @@
 import axios from 'axios';
 
-// Access environment variable correctly for Vite
 let API_KEY = process.env.VITE_EXCHANGE_RATE_API_KEY;
 API_KEY = API_KEY.replace(/"/g, '');
-
-console.log(API_KEY);
 
 const axiosInstance = axios.create({
   baseURL: `https://v6.exchangerate-api.com/v6/${API_KEY}`,
