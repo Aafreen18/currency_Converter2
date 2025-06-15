@@ -32,7 +32,7 @@ Convert any currency to another in real-time and get the exchanged amount instan
 
 ## 🚀 Live Demo
 
-[🔗 Click here to view the live app](#) *(Add your deployed URL here)*
+🔗https://worldrates.netlify.app/ 
 
 ---
 
